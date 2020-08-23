@@ -14,51 +14,28 @@ butt[i].addEventListener('click', () => {
 	sound(mp3[i]);
 
 });
-}
+};
 
-const playSound = (item) => {
-
-	switch(item.keyCode){
-
-	case 65:
-			sound(mp3[0]);
-
+document.addEventListener("keyup", function (event) {
+  switch(event.keyCode){ 
+	 case 65:sound(mp3[0]);
 			break;
-	case 83:
-			sound(mp3[1]);
-
+	 case 83:sound(mp3[1]);
 			break;
-	case 68:
-			sound(mp3[2]);
-
+	 case 68:sound(mp3[2]);
 			break;
-	case 70:
-			sound(mp3[3]);
-
+	 case 70:sound(mp3[3]);
 			break;
-	case 71:
-			sound(mp3[4]);
-
+	 case 71:sound(mp3[4]);
 			break;
-	case 72:
-			sound(mp3[5]);
-
+	 case 72:sound(mp3[5]);
 			break;
-	case 74:
-			sound(mp3[6]);
-
+	 case 74:sound(mp3[6]);
 			break;
-	case 75:
-			sound(mp3[7]);
-			
+	 case 75:sound(mp3[7]);
 			break;
-	case 76:
-			sound(mp3[8]);
-
+	 case 76:sound(mp3[8]);
 			break;
 	}
-};
-document.addEventListener("keydown", playSound);
-
-
+});
 
